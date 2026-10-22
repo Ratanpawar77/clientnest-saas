@@ -194,7 +194,12 @@
       };
 
       if (isSignup) {
-        const { data, error } = await supabase.auth.signUp(credentials);
+        const { data, error } = await supabase.auth.signUp({
+  ...credentials,
+  options: {
+    emailRedirectTo: "https://ratanpaw77.github.io/clientnest-saas/"
+  }
+});
         if (error) throw error;
 
         if (data.session) {
