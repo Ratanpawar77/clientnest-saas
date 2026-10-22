@@ -197,7 +197,7 @@
         const { data, error } = await supabase.auth.signUp({
   ...credentials,
   options: {
-    emailRedirectTo: "https://ratanpaw77.github.io/clientnest-saas/"
+    emailRedirectTo: "https://ratanpawar77.github.io/clientnest-saas/"
   }
 });
         if (error) throw error;
